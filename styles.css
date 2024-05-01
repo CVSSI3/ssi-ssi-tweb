@@ -1,0 +1,131 @@
+/* Couleurs */
+:root {
+    --rose: #FFC5C5;
+    --violet: #7A288A;
+    --beige: #F5F5DC;
+    --orange: #FFA07A;
+    --bleu: #4682B4;
+}
+
+/* Header */
+header {
+    background-color: var(--rose);
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Accueil */
+#accueil {
+    background-color: var(--beige);
+    padding: 20px;
+    text-align: center;
+}
+
+#accueil img {
+    background-image: url("https://previews.123rf.com/images/tashh1601/tashh16011112/tashh1601111200020/11650646-seamless-arri%C3%A8re-plan-avec-caf%C3%A9-et-p%C3%A2tisseries.jpg");
+    background-size: 150px;
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Menu */
+#menu {
+    background-color: var(--violet);
+    padding: 20px;
+}
+
+#menu h2 {
+    color: white;
+}
+
+#menu-toggle {
+   display: none;
+    background-color: white;
+    color: var(--violet);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    background-color: white;
+    color: var(--violet);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Contact */
+#contact {
+    background-color: var(--bleu);
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--violet);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
